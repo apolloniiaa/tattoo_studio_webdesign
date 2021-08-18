@@ -14,10 +14,11 @@ body {
   src: url('./Livingstone.ttf');
 }
 #logo {
-  color: rgb(251, 240, 119);
-  font-family: 'Ink';
+  color: rgba(251, 240, 119, 0.562);
+  font-family: 'Ink', Arial, Helvetica, sans-serif;
   letter-spacing: 1rem;
 }
+
 .photo-logo {
   width: 50px;
   margin-right: 1rem;
@@ -29,7 +30,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: white;
+  color: rgb(251, 240, 119);
   width: 80%;
   margin: auto;
   padding: 2rem 0rem;
@@ -74,7 +75,7 @@ body {
 }
 
 .fashion-span {
-  color: yellow;
+  color: rgb(251, 240, 119);
 }
 
 .mountain-span {
@@ -126,8 +127,12 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #afb09c;
-  color: rgb(0, 0, 0);
+  background-image: url('./img/page2_bg2.0.jpg');
+  background-position: center;
+  background-size: cover;
+  /* backdrop-filter: blur(40px);
+  filter: blur(3px); */
+  color: rgb(235, 219, 95);
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -167,7 +172,6 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: #17080a;
   left: 0;
   top: -15%;
 }
@@ -185,11 +189,11 @@ body {
   transform-origin: 75% 75%;
 }
 .cursor.nav-active {
-  background-color: #ffb073;
+  background-color: #ffffffa8;
   transform: scale(3);
 }
 .cursor.explore-active {
-  background-color: rgba(255, 196, 113, 0.756);
+  background-color: rgba(255, 255, 255, 0.695);
   transform: scale(3);
 }
 .cursor-text {
@@ -285,19 +289,29 @@ body {
 }
 
 .fashion1 h1 {
-  color: rgb(255, 139, 93);
+  color: #a89a67;
+  font-family: 'Ink', Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 5rem;
 }
 .fashion2 h1 {
-  color: rgb(255, 189, 132);
+  color: #96886e;
+  font-family: 'Ink', Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 5rem;
 }
 .fashion3 h1 {
-  color: rgb(215, 175, 126);
+  color: #71573f;
+  font-family: 'Ink', Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 5rem;
 }
 
 .fashion-text p {
   font-size: 2rem;
   padding: 2rem 2rem 0rem 0rem;
   margin-bottom: 10rem;
+  text-align: center;
 }
 .fashion-nr {
   font-size: 15rem;
@@ -343,7 +357,6 @@ body {
     height: 50vh;
   }
   .fashion-text h1 {
-    font-size: 2rem;
     padding: 1rem 0rem;
   }
   .fashion-text p {
