@@ -5,15 +5,24 @@
 }
 
 body {
-  background-color: #17080a;
-  font-family: "Montserrat", sans-serif;
+  background-color: #151515;
+  font-family: 'Montserrat', sans-serif;
   overflow-x: hidden;
 }
-
-#logo {
-  color: white;
-  font-family: "Abril Fatface";
+@font-face {
+  font-family: Ink;
+  src: url('./Livingstone.ttf');
 }
+#logo {
+  color: rgb(251, 240, 119);
+  font-family: 'Ink';
+  letter-spacing: 1rem;
+}
+.photo-logo {
+  width: 50px;
+  margin-right: 1rem;
+}
+
 .nav-header {
   min-height: 10vh;
   font-size: 1rem;
@@ -36,7 +45,7 @@ body {
   justify-content: space-between;
   align-items: center;
   color: whitesmoke;
-  background: #17080a;
+  background: #1c1c1c;
 }
 
 .hero-desc {
@@ -55,6 +64,7 @@ body {
   flex: 1;
   flex-basis: 25rem;
   overflow: hidden;
+  filter: grayscale(100%);
 }
 
 .hero-img img {
@@ -64,22 +74,26 @@ body {
 }
 
 .fashion-span {
-  color: rgb(255, 195, 171);
+  color: yellow;
 }
 
 .mountain-span {
-  color:  rgb(234, 249, 190);
+  color: rgb(251, 240, 119);
+  font-family: Ink;
 }
 
 .hike-span {
-  color: rgb(255, 216, 154);
+  color: rgb(251, 240, 119);
+  font-family: Ink;
 }
-
+.art-spam {
+  color: rgb(251, 240, 119);
+  font-family: Ink;
+}
 .hero-desc h2 {
-  font-family: "Abril Fatface";
+  font-family: 'Abril Fatface';
   font-size: 5rem;
 }
-
 .hero-desc p {
   padding: 3rem 0rem;
   font-size: 1.5rem;
@@ -112,7 +126,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color:  #afb09c;
+  background-color: #afb09c;
   color: rgb(0, 0, 0);
   display: flex;
   justify-content: space-around;
@@ -170,26 +184,26 @@ body {
   transition-property: background, transform;
   transform-origin: 75% 75%;
 }
-.cursor.nav-active{
+.cursor.nav-active {
   background-color: #ffb073;
   transform: scale(3);
 }
-.cursor.explore-active{
+.cursor.explore-active {
   background-color: rgba(255, 196, 113, 0.756);
   transform: scale(3);
 }
-.cursor-text{
+.cursor-text {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform:translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   font-size: 0.5rem;
 }
-.title{
+.title {
   position: relative;
-  overflow:hidden;
+  overflow: hidden;
 }
-.title-swipe{
+.title-swipe {
   width: 100%;
   height: 100%;
   top: 0;
@@ -199,22 +213,21 @@ body {
   transform: translateY(100%);
 }
 
-.t-swipe1{
-  background-color:   rgb(234, 249, 190);
+.t-swipe1 {
+  background-color: rgb(234, 249, 190);
 }
-.t-swipe2{
+.t-swipe2 {
   background-color: rgb(255, 216, 154);
 }
-.t-swipe3{
-  background-color:rgb(255, 195, 171);
+.t-swipe3 {
+  background-color: rgb(255, 195, 171);
 }
 
 .scrollmagic-pin-spacer {
   position: static !important;
 }
 
-
-.fashion1{
+.fashion1 {
   min-height: 90vh;
   display: flex;
   justify-content: center;
@@ -226,7 +239,7 @@ body {
   flex-wrap: wrap;
   position: relative;
 }
-.fashion2{
+.fashion2 {
   min-height: 90vh;
   display: flex;
   justify-content: center;
@@ -237,9 +250,7 @@ body {
   margin-top: 5rem;
   flex-wrap: wrap;
   position: relative;
-
 }
-
 
 .fashion3 {
   min-height: 90vh;
@@ -306,15 +317,24 @@ body {
   transform: translateX(-100%);
 }
 .swipe1 {
-  background: rgb(255, 139, 93);
+  background-image: url('./img/alex-wong-FIyiDmEVbnM-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
   z-index: 5;
 }
 .swipe2 {
-  background: rgb(255, 189, 132);
+  background-image: url('./img/alex-wong-FIyiDmEVbnM-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
   z-index: 4;
 }
 .swipe3 {
-  background: rgb(215, 175, 126);
+  background-image: url('./img/alex-wong-FIyiDmEVbnM-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
   z-index: 3;
 }
 
